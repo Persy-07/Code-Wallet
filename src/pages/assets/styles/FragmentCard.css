@@ -1,0 +1,60 @@
+.fragment-card {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .fragment-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .fragment-card-content {
+    padding: 1rem;
+  }
+  
+  .fragment-title {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .fragment-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fragment-tags {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+  }
+  
+  .view-code-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+  }
+  
+  .view-code-button:hover {
+    opacity: 1;
+    background: none;
+  }
+  
+  /* Dark mode adjustments */
+  .dark-mode .fragment-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark-mode .fragment-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }

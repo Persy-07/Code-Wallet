@@ -1,0 +1,119 @@
+.fragment-form-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .form-container {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #bd2130;
+  }
+  
+  .save-button {
+    background-color: var(--green);
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: #69b344;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .tag-checkbox {
+    display: flex;
+    align-items: center;
+    background-color: var(--medium-gray);
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+  }
+  
+  .tag-checkbox input {
+    margin-right: 0.5rem;
+    width: auto;
+  }
+  
+  .tag-checkbox label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  
+  .preview-container {
+    margin-top: 1.5rem;
+  }
+  
+  .preview-container h3 {
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+  }
+  
+  .code-preview {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 1rem;
+    overflow: auto;
+    max-height: 500px;
+  }
+  
+  .code-preview pre {
+    margin: 0;
+    font-family: 'Source Code Pro', Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .code-preview.light {
+    background-color: #f8f8f8;
+  }
+  
+  .code-preview.dark {
+    background-color: #282c34;
+    color: #abb2bf;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 992px) {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    
+    .form-container {
+      margin-bottom: 0;
+    }
+  }

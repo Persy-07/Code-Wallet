@@ -1,0 +1,73 @@
+.fragments-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .search-container {
+  
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--input-background);
+    color: var(--text-color);
+  }
+  
+  .fragments-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permet le passage à la ligne */
+    gap: 1rem; /* Espace entre les fragments */
+  }
+  
+  .fragments-grid > * {
+    flex: 0 1 calc(25% - 1rem); /* 4 fragments par ligne, avec un léger espace */
+    max-width: calc(25% - 1rem);
+    margin-bottom: 1rem; /* Espace vertical entre les lignes */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .fragments-grid > * {
+      flex: 0 1 calc(33.333% - 1rem); /* 3 fragments par ligne */
+      max-width: calc(33.333% - 1rem);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .fragments-grid > * {
+      flex: 0 1 calc(50% - 1rem); /* 2 fragments par ligne */
+      max-width: calc(50% - 1rem);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .fragments-grid > * {
+      flex: 0 1 100%; /* 1 fragment par ligne */
+      max-width: 100%;
+    }
+  }
+  
+  /* Pour les très petits écrans */
+  @media (max-width: 480px) {
+    .fragments-page {
+      padding: 0.5rem;
+    }
+  
+    .search-container {
+      margin-bottom: 0.5rem;
+    }
+  
+    .search-input {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
