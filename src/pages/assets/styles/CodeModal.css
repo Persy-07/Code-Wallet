@@ -1,0 +1,100 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .code-modal {
+    background-color: var(--white);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .modal-header h3 {
+    margin: 0;
+    color: var(--text-color);
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .close-button:hover {
+    color: var(--purple);
+    background: none;
+  }
+  
+  .code-container {
+    padding: 1rem;
+    overflow: auto;
+    flex-grow: 1;
+  }
+  
+  .code-container pre {
+    margin: 0;
+    white-space: pre-wrap;
+    font-family: 'Source Code Pro', Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .code-container.light {
+    background-color: #f8f8f8;
+  }
+  
+  .code-container.dark {
+    background-color: #282c34;
+    color: #abb2bf;
+  }
+  
+  .modal-footer {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .copy-button {
+    background-color: var(--green);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .copy-button:hover {
+    background-color: #69b344;
+  }
